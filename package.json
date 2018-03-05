@@ -1,0 +1,10 @@
+{
+  "name": "lighthouse",
+  "version": "1.0.0",
+  "description": "bitcoin wallet for crowdfunding",
+  "main": "index.js",
+  "author": "joemphilips",
+  "license": "MIT",
+  "private": true,
+  "workspaces": ["packages"]
+}
