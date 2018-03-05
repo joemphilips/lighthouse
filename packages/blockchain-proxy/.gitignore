@@ -1,0 +1,7 @@
+test/bitcoin-sandbox.conf
+node_modules/
+.nyc_output/
+*.js
+*.map
+!index.js
+dist

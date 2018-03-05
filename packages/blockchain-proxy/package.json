@@ -1,0 +1,31 @@
+{
+  "name": "blockchain-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/proxy.js",
+  "typings": "dist/proxy.d.ts",
+  "scripts": {
+    "test": "tsc && ava ./dist/test",
+    "pretest": "mkdir -p dist/test/ && cp ./test/*.conf dist/test/ ",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joemphilips/blockchain-proxy"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "typescript": "^2.7.1"
+  },
+  "dependencies": {
+    "@types/bitcoinjs-lib": "^3.3.1",
+    "bitcoin-core": "^2.0.0",
+    "bitcoinjs-lib": "^3.3.2",
+    "blockchain.info": "^2.11.0",
+    "debug": "^3.1.0",
+    "ini": "^1.3.5"
+  }
+}
