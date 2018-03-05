@@ -6,5 +6,10 @@
   "author": "joemphilips",
   "license": "MIT",
   "private": true,
-  "workspaces": ["packages"]
+  "workspaces": [
+    "packages"
+  ],
+  "devDependencies": {
+    "lerna": "^2.9.0"
+  }
 }
