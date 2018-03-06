@@ -1,6 +1,6 @@
 {
   "name": "wallet-protoc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "protoc files and generated typescript library",
   "main": "index.ts",
   "author": "joemphilips",
