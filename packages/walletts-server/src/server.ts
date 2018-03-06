@@ -1,11 +1,12 @@
-import {Wallet, WalletDB, BasicWallet, GRPCServer, DecryptStream, EncryptStream, Config, loadConfig, WalletServiceOpts} from "walletts-main"
+import {Wallet, WalletDB, BasicWallet, DecryptStream, EncryptStream, Config, loadConfig, WalletServiceOpts} from "walletts-main"
 import {container} from "walletts-main/container"
+import GRPCServer from './rpc_server'
 
 // facade class for wrapping up wallet with rpc interface
 // This is just one example of very basic wallet.
 // You may compose different kind of Classes and create different kinds of wallet.
 // e.g. wallet for managing community funds, wallet which uses external HD Key for signing, etc.
-export default class WalletService {
+export default class WalletServer {
   public cfg: Config;
   private walletdb: WalletDB<EncryptStream, DecryptStream>;
   private wallet: BasicWallet;

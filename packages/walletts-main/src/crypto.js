@@ -1,3 +1,4 @@
+"use strict";
 /*
 import * as _sodium from 'libsodium-wrappers'
 import * as sodium from 'sodium';

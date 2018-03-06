@@ -3,7 +3,7 @@
 
 use `yarn` instead of `npm` since this repository utilizes it's `workspace` feature
 
-to start, run
+to start, first install `lerna` globally and run
 
 ```
 yarn && lerna bootstrap

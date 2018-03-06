@@ -34,9 +34,12 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+}
 var _this = this;
 Object.defineProperty(exports, "__esModule", { value: true });
-var ava_1 = require("ava");
+var ava_1 = __importDefault(require("ava"));
 var proxy_1 = require("../src/proxy");
 var bitcoinjs_lib_1 = require("bitcoinjs-lib");
 ava_1.default('blockchain.info proxy', function (t) { return __awaiter(_this, void 0, void 0, function () {
@@ -73,4 +76,3 @@ ava_1.default.only("bitcoin core rpc client", function (t) { return __awaiter(_t
         }
     });
 }); });
-//# sourceMappingURL=index.js.map

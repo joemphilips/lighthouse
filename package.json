@@ -9,6 +9,7 @@
   "workspaces": [
     "packages"
   ],
+  "npmClient": "yarn",
   "devDependencies": {
     "lerna": "^2.9.0"
   },

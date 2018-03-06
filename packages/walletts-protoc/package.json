@@ -9,6 +9,7 @@
     "protoc": "^1.0.3"
   },
   "scripts": {
+    "test": "npm run build",
     "build": "protoc --plugin=protoc-gen-ts=./node_modules/.bin/protoc-gen-ts --js_out=import_style=commonjs,binary:generated --ts_out=service=true:generated -I ./proto proto/*.proto"
   },
   "devDependencies": {

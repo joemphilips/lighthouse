@@ -4,8 +4,8 @@
 //  2. it receives push notifications from server.
 import {EventEmitter2 as EventEmitter} from "eventemitter2"
 import {grpc} from 'grpc-web-client';
-import {CrowdFundingService, PaymentService} from '../../generated/backendserver_pb_service'
-import * as message from '../../generated/backendserver_pb'
+import {CrowdFundingService, PaymentService} from '@lighthouse/wallet-protoc'
+import * as message from '@lighthosue/wallet-protoc'
 import Request = grpc.Request;
 import ProtobufMessage = grpc.ProtobufMessage;
 import UnaryOutput = grpc.UnaryOutput;
