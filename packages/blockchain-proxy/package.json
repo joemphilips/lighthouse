@@ -5,8 +5,7 @@
   "main": "./dist/proxy.js",
   "typings": "dist/proxy.d.ts",
   "scripts": {
-    "test": "tsc && ava ./dist/test",
-    "pretest": "mkdir -p dist/test/ && cp ./test/*.conf dist/test/ ",
+    "test": "nyc ava-ts",
     "build": "tsc"
   },
   "keywords": [],
@@ -18,6 +17,8 @@
   },
   "devDependencies": {
     "ava": "^0.25.0",
+    "nyc": "^11.4.1",
+    "ts-node": "^5.0.1",
     "typescript": "^2.7.1"
   },
   "dependencies": {

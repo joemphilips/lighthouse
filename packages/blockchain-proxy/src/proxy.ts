@@ -26,8 +26,7 @@ export class Stub implements BlockchainProxy {
 
 export class RPC implements BlockchainProxy {
   public client: any;
-  constructor(confPath?: fs.PathLike){
-      debug(`going to use testnet bitcoin-core specified in ${conf}`)
+  constructor(confPath: fs.PathLike){
       let conf = ini.parse(fs.readFileSync(confPath, "utf-8"))
       const opts = {
         username: conf.rpcuser,
@@ -60,9 +59,8 @@ export class RPC implements BlockchainProxy {
       .map((tx: Transaction) => tx.getId())
   }
   public async isConnected() {
-    if(this.client.ping)
-
-  }
+    false
+  };
 }
 
 export class BlockchainInfo implements BlockchainProxy {
